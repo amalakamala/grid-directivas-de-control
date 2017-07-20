@@ -1,0 +1,9 @@
+@function anchoDeColumnas($i){
+	@return percentage(($i/12));
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i}{
+		width: anchoDeColumnas($i);
+	}
+}
